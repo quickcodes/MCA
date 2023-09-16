@@ -1,5 +1,5 @@
 ### Memory leak in c
-'''
+```
 #include<stdio.h>
 #include<stdlib.h>
 
@@ -21,4 +21,4 @@ int main(){
 	scanf("%d", &val);
 	return 0;
 }
-'''
+```
