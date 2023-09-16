@@ -23,12 +23,6 @@ int main(){
 }
 ```
 
-+++
-title  = "Print anything without printf in C/C++"
-date = 2022-10-01
-+++
-
-
 We use printf function in c language which a wrapper function provided by GNU c library which provides us some extra functionality but under the hood in reality printf runs "write" which is deeper level system call
 
 <!-- more -->
@@ -54,7 +48,7 @@ Every time we try to use system kernal functionality we use system calls (syscal
 We programmers just get some wrapper functions like printf, scanf etc...
 
 
-But the why we just use direct syscall? 🤔 It is because the are complicated than our lower level wrapper functions
+But then why we just don't use direct syscall? 🤔 It is because the are complicated than our lower level wrapper functions
 
 ```
 write(1, "Hello", 5);
@@ -187,7 +181,7 @@ write(1, "Hello World", 5);
 ```
 
 2 is assigned to Standard error.
-This are 3 numbers already assigned to processes. That's why when we create a file it returned value 3 and if we create or open another file look what happens
+There are 3 numbers already assigned to processes. That's why when we create a file it returned value 3 and if we create or open another file look what happens
 
 
 ```
